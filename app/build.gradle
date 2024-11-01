@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.compose'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace 'com.yunke.aioutbound'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.yunke.aioutbound"
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+
+    }
+}
+
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    //noinspection UseTomlInstead
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.5'
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.activity.compose
+    implementation project(':module_base')
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+    implementation libs.material
+
+    //跳转路由
+    implementation "com.alibaba:arouter-api:$arouter_version"
+    kapt "com.alibaba:arouter-compiler:$arouter_version"
+}

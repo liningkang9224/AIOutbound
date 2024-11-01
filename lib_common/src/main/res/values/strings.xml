@@ -1,0 +1,185 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="no_network_text">您的网络开小差咯~</string>
+    <string name="more_nothing">我是有底线的~</string>
+    <string name="text_failed">refresh failed</string>
+    <string name="text_finish">refresh success</string>
+    <string name="text_release">Release immediate refresh</string>
+    <string name="text_refreshing">Loading…discover more</string>
+    <string name="text_pulling">Pull down to refresh to \n discover more</string>
+    <string name="text_update">\'Latest update: \' M-d HH:mm</string>
+    <string name="text_loading">Loading…discover more</string>
+
+
+    <!--以下是不需要翻译的 需要显示中文-->
+    <string name="english">English</string>
+    <string name="chinese">简体中文</string>
+    <string name="traditional_chinese">繁體中文</string>
+    <string name="login_explain_tips">By clicking login, you agree to our collection, use, and/or disclosure of your personal data to the extent necessary for marketing purposes and declare my agreement with regulations in Singapore&#096;s PDPA law. Section 15A\n通过点击登录，您同意我们为营销目的收集、使用和/或披露您的个人数据，并声明我同意新加坡PDPA法律中的法规。15节</string>
+
+    <string name="not_network_en">Network connection\nexception, please check the\nnetwork.</string>
+    <string name="not_network_cn">网络连接异常，请检查网络</string>
+    <string name="refresh">Refresh</string>
+    <string name="reorder_back">Re-Order/重新点餐 %1$dS</string>
+
+
+    <string name="quick_ordering">快速点餐</string>
+    <string name="member_ordering">会员点餐</string>
+    <string name="dine_in">堂食</string>
+    <string name="packaging">打包</string>
+    <string name="language_select">Language /选择语言</string>
+    <string name="pl_scan_pay">请扫描二维码完成付款</string>
+    <string name="pl_pay_as_introduce">请按图中指示完成付款</string>
+
+
+    <!--    adapter the language of app -->
+
+    <string name="payment_way">Payment way</string>
+    <string name="total">Total</string>
+    <string name="sold_out">Sold Out</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="service_charge">Service Charge (%1$s)</string>
+    <string name="gst">GST (%1$s)</string>
+    <string name="member_discount" tools:ignore="StringEscaping">Member&#096;s Discount</string>
+    <string name="point_deduction">Redeem Points</string>
+    <string name="coupons">Coupons</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="points_earned">Points Earned</string>
+    <string name="pick_up_dishes_by_pick_up_no">Pick up dishes by pick-up No.</string>
+    <string name="pickup_number">Pickup Number</string>
+
+
+    <string name="login_success">Login Success</string>
+    <string name="takeaway_expense">Takeaway Expense</string>
+    <string name="available_coupons">Available Coupons(%1$d)</string>
+    <string name="unavailable_coupons">Unavailable Coupons(%1$d)</string>
+
+
+    <string name="printing_receipts">Please do not pull the printed receipt</string>
+    <string name="please_complete_the_payment_according_to_the_instructions_in_the_picture">Please complete the payment according to the instructions in the picture</string>
+    <string name="re_order">Re-Order</string>
+    <string name="sure">OK</string>
+    <string name="Dialog_Tip_Title">Tips</string>
+    <string name="dear_customer">Dear Customer</string>
+    <string name="dear_customer_msg">To enhance your experience, kindly share your birthday details with us. This enables us to offer personalized and top-notch services. We appreciate your cooperation!</string>
+    <string name="dear_customer_cant_change">*After selection, it cannot be changed!</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Skip">Skip</string>
+    <string name="Birthday">Birthday</string>
+    <string name="Select_ymd">Select year, month, day</string>
+    <string name="choose_birthday">Choose Birth Date</string>
+    <string name="Done">Done</string>
+    <string name="Tips_select_date">Please select a date of birth</string>
+    <string name="toast_update_success">Successes!</string>
+    <string name="non_stackable">Non-stackable</string>
+    <string name="order_first_then_redeem">Order first,then redeem.</string>
+
+
+    <string name="please_follow_the_instruction_above_to_complete_the_payment">Please follow the instruction\nabove to complete the payment</string>
+    <string name="are_you_sure_to_clear_the_shopping_cart">Are you sure to clear the shopping cart</string>
+    <string name="completed">Completed</string>
+    <string name="please_select">Please select</string>
+    <string name="choose_max">Choose max %1$d</string>
+    <string name="choose_min">"Choose min %1$d max %2$d"</string>
+
+    <string name="specifications">Specifications</string>
+    <string name="add_material">Add Material</string>
+    <string name="coupon_num">Use coupons %1$d,total </string>
+    <string name="submit_order">Submit Order</string>
+    <string name="please_pay_at_the_counter">Payment has to be made for your order to be processed</string>
+    <string name="successfully_paid_to_earn_points">After successful payment, you will receive %1$s points</string>
+    <string name="reorder_time">Re-Order %1$dS</string>
+    <string name="check_out">Check Out</string>
+    <string name="login">Login</string>
+    <string name="back">Back</string>
+    <string name="submit">Submit</string>
+    <string name="details">Details</string>
+    <string name="member_login_register">Member Login/Register</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="note_to_restaurant">Note to restaurant</string>
+    <string name="optional">Optional</string>
+    <string name="add_your_request_subject_to_restaurant_discretion" tools:ignore="StringEscaping">Add your request (subject to restaurant&#096;s discretion)</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_your_cell_phone">Enter your cell phone</string>
+    <string name="enter_verification_code">Enter verification code</string>
+    <string name="login_explain">By clicking login, you agree to our collection, use, and/or disclosure of your personal data to the extent necessary for marketing purposes and declare my agreement with regulations in Singapore&#096;s PDPA law. Section 15A</string>
+
+    <string name="back_s">Back %1$sS</string>
+    <string name="minimum_spending">On orders over %1$s</string>
+    <string name="applicable_store">Applicable store</string>
+    <string name="not_enough_points">Not Enough Points</string>
+    <string name="no_coupons_available">No Coupons Available</string>
+
+
+    <string name="payment_failed">Payment failed</string>
+    <string name="you_need_to_select">You need to select%1$sto select products in this category</string>
+
+    <string name="tips">Tips</string>
+    <string name="ok">Ok</string>
+    <string name="time_out">TIME OUT!!</string>
+    <string name="cart">Cart</string>
+    <string name="empty_cart">Empty Cart</string>
+    <string name="empty">Empty</string>
+    <string name="modify">Modify</string>
+    <string name="coupons_available">There are %1$d coupons available</string>
+
+
+    <string name="discount_desc">Discount = Total amount-Total amount after discount</string>
+
+    <string name="pay_now">%1$s Pay</string>
+    <string name="member_pay">%1$s Member Pay</string>
+
+    <string name="select_all">Select All</string>
+
+    <string name="points_after_successful_payment">You will earn %1$s points after successful payment</string>
+
+    <string name="please_select_the_meal">Please select the meal</string>
+    <string name="switch_payment_way">Switch Payment way</string>
+    <string name="switch_payment_way_s">Switch Payment way %1$sS</string>
+    <string name="cleared_order_the_home_page">All information will be cleared soon and re-order on the home page</string>
+    <string name="setting">Setting</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="note">Note</string>
+    <string name="i_have_paid">I have paid</string>
+    <string name="querying_result">Querying the payment result...</string>
+    <string name="all_in_pay_tips">Please make sure you are not on the current page. If you are on this page, please click "Return".</string>
+    <string name="not_on_this_page">I\'m not on this page</string>
+
+
+    <string name="top_up">Top Up</string>
+    <string name="top_up_package">Top Up Package</string>
+    <string name="any_amount_top_up">Any amount Top up</string>
+    <string name="get">Get</string>
+    <string name="bonus">Bonus</string>
+    <string name="ewallet">eWallet</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="please_enter_any_amount">Please enter any amount</string>
+    <string name="old_amount">Before eWallet</string>
+    <string name="now_amount">After eWallet</string>
+    <string name="bonus_in_account">Bonus In Account</string>
+    <string name="view_more">View more</string>
+    <string name="view_hide">Hide</string>
+    <string name="minimum_top_up_amount">The minimum top-up amount is %1$s</string>
+    <string name="add_purchase">Add</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="the_maximum_purchase">The maximum purchase quantity has been reached</string>
+    <string name="change_the_ip_address">Change the IP address</string>
+    <string name="moq">MOQ:%1$s</string>
+    <string name="usage_time">Usage time:%1$s~%2$s</string>
+    <string name="reasons_for_unavailability_of_this_order">Reasons for unavailability of this order</string>
+
+
+    <!--图标-->
+    <string name="icon_back">&#xe66f; Back</string>
+    <string name="icon_cart">&#xe686;</string>
+    <string name="icon_radio">&#xe69a;</string>
+    <string name="icon_radio_ok">&#xe698;</string>
+    <string name="icon_check">&#xe699;</string>
+    <string name="icon_cart_reduce">&#xe696;</string>
+    <string name="icon_cart_add">&#xe697;</string>
+    <string name="icon_cart_logo">&#xe686;</string>
+    <string name="icon_coupon_jb">&#xa661;</string>
+    <string name="icon_triangle_left">&#xe6a1;</string>
+    <string name="icon_delete">&#xe677;</string>
+    <string name="icon_markup_tip_icon">&#xe67c;</string>
+</resources>

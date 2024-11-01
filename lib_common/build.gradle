@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+    namespace 'com.yunke.lib_common'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 28
+        targetSdk 34
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    buildFeatures {
+        compose true
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    //noinspection UseTomlInstead
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.5'
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.activity.compose
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+    implementation libs.material
+    implementation "androidx.constraintlayout:constraintlayout:${constraintlayout_version}"
+
+    //图片加载库
+    api 'com.github.bumptech.glide:glide:4.16.0'
+
+    // 高斯模糊和圆角等
+    api 'jp.wasabeef:glide-transformations:4.3.0'
+
+    //gson解析
+    api 'com.google.code.gson:gson:2.8.5'
+
+    /**
+     * https://github.com/scwang90/SmartRefreshLayout/tree/master
+     * 下拉刷新
+     */
+    api 'io.github.scwang90:refresh-layout-kernel:2.1.0'      //核心必须依赖
+    api 'io.github.scwang90:refresh-header-material:2.1.0'    //谷歌刷新头
+    api 'io.github.scwang90:refresh-header-classics:2.1.0'    //经典刷新头
+    api 'io.github.scwang90:refresh-footer-ball:2.1.0'    //经典加载
+    api 'io.github.scwang90:refresh-footer-classics:2.1.0'    //经典加载
+
+    //引入viewModel
+    api "androidx.lifecycle:lifecycle-extensions:${lifecycle_version}"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle_version}"
+    api "androidx.core:core-ktx:${core_ktx_version}"
+}

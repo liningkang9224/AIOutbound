@@ -1,0 +1,1 @@
+package com.yunke.aioutbound.view.settingimport com.yunke.module_base.vm.BaseViewModel/** * @author Linker * @description: * @date :2024/11/1 */class SettingViewModel:BaseViewModel() {}

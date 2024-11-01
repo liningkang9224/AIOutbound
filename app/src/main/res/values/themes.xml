@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AIOutbound" parent="Theme.AppCompat.Light.NoActionBar" />
+    <!--全屏主题样式-->
+    <style name="FullScreenTheme" parent="Theme.AIOutbound">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <!--有背景图的主题样式-->
+    <style name="Theme.AIOutbound.Background" parent="FullScreenTheme">
+        <item name="android:windowBackground">@drawable/app_layer_theme</item>
+    </style>
+
+
+</resources>

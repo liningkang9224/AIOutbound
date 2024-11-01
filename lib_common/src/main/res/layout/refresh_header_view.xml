@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.header.ClassicsHeader
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:srlAccentColor="@color/refresh_text_color"
+    app:srlTextFailed="@string/text_failed"
+    app:srlTextFinish="@string/text_finish"
+    app:srlTextLoading="@string/text_loading"
+    app:srlTextRefreshing="@string/text_refreshing"
+    app:srlTextRelease="@string/text_release"
+    app:srlTextPulling="@string/text_pulling"
+    app:srlTextSizeTime="12sp"
+    app:srlTextSizeTitle="13sp"
+    app:srlTextUpdate="@string/text_update"
+    tools:ignore="MissingClass" />

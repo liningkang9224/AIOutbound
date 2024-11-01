@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabIndicator">
+        <attr name="selected_color" format="color"></attr>
+        <attr name="normal_color" format="color"></attr>
+        <attr name="text_size" format="dimension"></attr>
+        <attr name="x_offset" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="AutoLinkStyleTextView">
+        <attr name="text_value" format="string"></attr>
+        <attr name="text_value_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="VariableViewPager">
+        <attr name="is_scroll" format="boolean"></attr>
+        <attr name="is_animation" format="boolean"></attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,19 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false"
+    android:zAdjustment="top">
+    <translate
+        android:duration="500"
+        android:fillAfter="true"
+        android:fillBefore="true"
+        android:fillEnabled="true"
+        android:fromXDelta="-1000%"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:toXDelta="0%"/>
+    <rotate
+        android:interpolator="@android:anim/overshoot_interpolator"
+        android:fromDegrees="0"
+        android:toDegrees="-360"
+        android:pivotX="0%"
+        android:pivotY="200%"
+        android:duration="500" />
+</set>

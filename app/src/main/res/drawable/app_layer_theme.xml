@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:drawable="@color/white" />
+
+
+    <!--    头部-->
+    <item >
+        <bitmap
+            android:gravity="center|top"
+            android:tileModeY="mirror"
+            android:src="@mipmap/ic_app_theme" />
+    </item>
+    <item
+        android:top="@dimen/dp_260"
+        android:drawable="@color/white" />
+    <item
+        android:top="@dimen/dp_260"
+        android:drawable="@drawable/shape_theme_bg" />
+</layer-list>
