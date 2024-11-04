@@ -36,6 +36,9 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    buildFeatures{
+        aidl = true
+    }
 }
 
 kapt {

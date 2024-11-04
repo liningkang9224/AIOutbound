@@ -1,78 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="@color/white"
-    android:layout_gravity="center"
-    app:cardCornerRadius="@dimen/item_card_radius">
+    android:background="@mipmap/ic_dialog_bg"
+    android:paddingTop="@dimen/dp_42"
+    android:paddingBottom="@dimen/dp_25">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <TextView
+        android:id="@+id/message_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="@string/Dialog_Tip_Title"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/sp_17"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/message_tv_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/dp_11"
-        android:paddingTop="@dimen/dp_11">
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dp_21"
+        android:textColor="@color/color_748194"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintTop_toBottomOf="@id/message_tv_title" />
 
-        <TextView
-            android:id="@+id/message_tv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/dp_20"
-            android:paddingRight="@dimen/dp_20"
-            android:gravity="center"
-            android:text="@string/Dialog_Tip_Title"
-            android:layout_marginTop="@dimen/margin_top"
-            android:textColor="@color/app_text_color"
-            android:textSize="@dimen/dp_14"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/dialog_tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_dialog_bt_cancel_bg"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/color_748194"
+        android:textSize="@dimen/dp_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/dialog_tv_confirm"
+        app:layout_constraintTop_toBottomOf="@id/message_tv_content" />
 
-
-        <TextView
-            android:id="@+id/message_tv_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorSubTitle"
-            android:textSize="@dimen/sp_13"
-            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
-            android:paddingVertical="@dimen/dp_8"
-            android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@id/message_tv_title" />
-
-        <TextView
-            android:id="@+id/dialog_tv_cancel"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/bottom_height"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/shape_app_bt_bg_n_stroke"
-            android:gravity="center"
-            android:text="@string/cancel"
-            android:layout_marginTop="@dimen/dp_11"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:textSize="@dimen/dp_14"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/dialog_tv_confirm"
-            app:layout_constraintTop_toBottomOf="@id/message_tv_content" />
-
-        <TextView
-            android:id="@+id/dialog_tv_confirm"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/bottom_height"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="@dimen/dp_11"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:background="@drawable/shape_app_bt_bg_p"
-            android:gravity="center"
-            android:text="@string/confirm"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:textSize="@dimen/dp_14"
-            app:layout_constraintLeft_toRightOf="@id/dialog_tv_cancel"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/message_tv_content" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/dialog_tv_confirm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_dialog_bt_confirm_bg"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/dialog_tv_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message_tv_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

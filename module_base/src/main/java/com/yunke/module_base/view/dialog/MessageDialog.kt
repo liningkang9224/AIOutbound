@@ -38,10 +38,6 @@ class MessageDialog(context: Context) : AlertDialog(context) {
         mTvContent = findViewById(R.id.message_tv_content)
         mTvCancel = findViewById(R.id.dialog_tv_cancel)
         mTvConfirm = findViewById(R.id.dialog_tv_confirm)
-
-        ThemeManage.setShapeSolidColor(mTvConfirm)
-        ThemeManage.setShapeStrokeColor(mTvCancel)
-        ThemeManage.setTextColor(mTvCancel)
         setListener()
     }
 
@@ -106,12 +102,9 @@ class MessageDialog(context: Context) : AlertDialog(context) {
     fun onShow(): MessageDialog {
         super.show()
         var params = window?.attributes
-        params?.width = DisplayUtil.getWidth(context) * 3 / 5
-        params?.height = DisplayUtil.getHeight(context) * 2 / 5
+        params?.width = DisplayUtil.getWidth(context) * 300 / 375
         window?.attributes = params
         return this
     }
 
-    override fun onBackPressed() {
-    }
 }

@@ -7,13 +7,14 @@
 
     <ImageView
         android:id="@+id/home_tab_iv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_22" />
 
     <TextView
         android:id="@+id/home_tab_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
         android:textColor="@color/selector_tab_text_color"
         android:textSize="10sp" />
 </LinearLayout>

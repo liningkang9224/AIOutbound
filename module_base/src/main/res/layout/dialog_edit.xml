@@ -1,76 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="@dimen/item_card_radius">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/ic_dialog_bg"
+    android:paddingTop="@dimen/dp_42"
+    android:paddingBottom="@dimen/dp_25">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/message_tv_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="20dp">
-
-        <TextView
-            android:id="@+id/message_tv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/dp_20"
-            android:paddingRight="@dimen/dp_20"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:textColor="@color/colorTitle"
-            android:textSize="@dimen/sp_18"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/sp_17"
+        android:textStyle="bold"
+        tools:text="标题"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-        <EditText
-            android:id="@+id/message_et"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/edit_height"
-            android:background="@drawable/shape_input_bg"
-            android:layout_marginLeft="@dimen/dp_20"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="@dimen/dp_5"
-            android:gravity="center|left"
-            android:textColor="@color/colorText"
-            android:textCursorDrawable="@drawable/shape_edit_cursor"
-            android:textSize="@dimen/sp_12"
-            android:layout_marginRight="@dimen/dp_20"
-            app:layout_constraintTop_toBottomOf="@id/message_tv_title" />
+    <EditText
+        android:id="@+id/message_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/shape_input_bg"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_5"
+        android:textColor="@color/app_text_color"
+        android:textCursorDrawable="@drawable/shape_edit_cursor"
+        android:textSize="@dimen/sp_12"
+        android:textColorHint="#95A3B8"
+        tools:text="设置验证消息好友通过率更高"
+        app:layout_constraintTop_toBottomOf="@id/message_tv_title" />
 
-        <TextView
-            android:id="@+id/dialog_tv_cancel"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/dp_40"
-            android:layout_marginLeft="@dimen/dp_20"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/shape_app_button_stroke"
-            android:gravity="center"
-            android:text="@string/cancel"
-            android:textColor="@color/colorAccent"
-            android:textSize="@dimen/sp_13"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/dialog_tv_confirm"
-            app:layout_constraintTop_toBottomOf="@id/message_et" />
+    <TextView
+        android:id="@+id/dialog_tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dp_42"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_dialog_bt_cancel_bg"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/color_748194"
+        android:textSize="@dimen/dp_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/dialog_tv_confirm"
+        app:layout_constraintTop_toBottomOf="@id/message_et" />
 
-        <TextView
-            android:id="@+id/dialog_tv_confirm"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/dp_40"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="@dimen/dp_20"
-            android:background="@drawable/shape_app_button_bg"
-            android:gravity="center"
-            android:text="@string/confirm"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp_13"
-            app:layout_constraintLeft_toRightOf="@id/dialog_tv_cancel"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/message_et" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/dialog_tv_confirm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/dp_42"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_dialog_bt_confirm_bg"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/dialog_tv_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message_et" />
+</androidx.constraintlayout.widget.ConstraintLayout>

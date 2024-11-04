@@ -9,13 +9,15 @@
         android:id="@+id/fragmentView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/tabView"
+        app:layout_constraintBottom_toTopOf="@id/lineView"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabView"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/dp_49"
         android:background="@android:color/white"
         android:elevation="5dp"
         android:orientation="horizontal"
@@ -23,5 +25,13 @@
         app:tabBackground="@android:color/transparent"
         app:tabIndicatorColor="@android:color/transparent"
         app:tabRippleColor="@null" />
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tabView"
+        android:background="@color/colorLine"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

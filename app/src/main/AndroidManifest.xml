@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <queries>
+        <package android:name="com.yunke.enterprisep.miui" />
+    </queries>
+
+
     <application
         android:name=".AIApplication"
         android:allowBackup="true"
@@ -25,8 +30,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.ai.AiRecordActivity"
-            android:theme="@style/Theme.AIOutbound.Background"/>
+        <activity
+            android:name=".view.ai.AiRecordActivity"
+            android:theme="@style/Theme.AIOutbound.Background" />
+
     </application>
 
 </manifest>

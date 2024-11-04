@@ -42,10 +42,10 @@ class MainActivity : ViewModelActivity<ActivityMainBinding, MainViewModel>() {
             mFragmentMap[3] = this
         }
 
-        mTabList.add(newTab(getString(R.string.home), R.drawable.selector_tab_home_icon))
-        mTabList.add(newTab(getString(R.string.mail), R.drawable.selector_tab_home_icon))
-        mTabList.add(newTab(getString(R.string.app), R.drawable.selector_tab_home_icon))
-        mTabList.add(newTab(getString(R.string.mine), R.drawable.selector_tab_home_icon))
+        mTabList.add(newTab(getString(R.string.home), R.drawable.selector_tab_icon_home))
+        mTabList.add(newTab(getString(R.string.mail), R.drawable.selector_tab_icon_mail))
+        mTabList.add(newTab(getString(R.string.app), R.drawable.selector_tab_icon_app))
+        mTabList.add(newTab(getString(R.string.mine), R.drawable.selector_tab_icon_mine))
 
         mTabList.forEachIndexed { index, tab ->
             viewBinding()?.tabView?.newTab()?.setCustomView(tab)?.apply {
@@ -54,7 +54,11 @@ class MainActivity : ViewModelActivity<ActivityMainBinding, MainViewModel>() {
         }
         addFragment()
         tabSelected(selectPosition)
+
+
+
     }
+
 
     /**
      * 手动选择tab

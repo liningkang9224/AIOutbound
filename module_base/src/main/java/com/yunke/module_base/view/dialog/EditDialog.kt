@@ -96,11 +96,9 @@ class EditDialog(context: Context) : AlertDialog(context) {
     fun onShow(): EditDialog {
         super.show()
         var params = window?.attributes
-        params?.width = DisplayUtil.getWidth(context) * 4 / 5
+        params?.width = DisplayUtil.getWidth(context) * 300 / 375
         window?.attributes = params
         return this
     }
 
-    override fun onBackPressed() {
-    }
 }
