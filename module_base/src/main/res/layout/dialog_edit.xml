@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@mipmap/ic_dialog_bg"
     android:paddingTop="@dimen/dp_42"
     android:paddingBottom="@dimen/dp_25">
@@ -18,10 +18,10 @@
         android:textColor="@color/app_text_color"
         android:textSize="@dimen/sp_17"
         android:textStyle="bold"
-        tools:text="标题"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="标题" />
 
 
     <EditText
@@ -35,17 +35,17 @@
         android:gravity="center|left"
         android:paddingLeft="@dimen/dp_5"
         android:textColor="@color/app_text_color"
+        android:textColorHint="#95A3B8"
         android:textCursorDrawable="@drawable/shape_edit_cursor"
         android:textSize="@dimen/sp_12"
-        android:textColorHint="#95A3B8"
-        tools:text="设置验证消息好友通过率更高"
-        app:layout_constraintTop_toBottomOf="@id/message_tv_title" />
+        app:layout_constraintTop_toBottomOf="@id/message_tv_title"
+        tools:text="设置验证消息好友通过率更高" />
 
     <TextView
         android:id="@+id/dialog_tv_cancel"
         android:layout_width="0dp"
         android:layout_height="@dimen/bottom_height"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/dp_20"
         android:layout_marginTop="@dimen/dp_42"
         android:layout_marginRight="5dp"
         android:background="@drawable/shape_dialog_bt_cancel_bg"
@@ -64,7 +64,7 @@
         android:layout_height="@dimen/bottom_height"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="@dimen/dp_42"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/dp_20"
         android:background="@drawable/shape_dialog_bt_confirm_bg"
         android:gravity="center"
         android:text="@string/confirm"
